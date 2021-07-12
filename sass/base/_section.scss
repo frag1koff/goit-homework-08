@@ -1,0 +1,30 @@
+// .section {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
+.our-team {
+  background-color: #f5f4fa;
+}
+.our-team-title-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}

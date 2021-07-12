@@ -1,0 +1,37 @@
+.menu-mobile {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.burger-btn__icon {
+  height: 16px;
+  width: 24px;
+}
+
+.burger-btn {
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.burger-btn:hover,
+.burger-btn:focus {
+  fill: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-mobile {
+    display: none;
+  }
+}
+.mobile-menu {
+  padding-top: 40px;
+}
