@@ -5,8 +5,19 @@
 .our-team {
   background-color: #f5f4fa;
 }
-.our-team-title-list:not(:last-child) {
-  margin-right: 30px;
+// .our-team-title-list :not(:last-child) {
+//   margin-right: 30px;
+// }
+.our-team-title-list {
+  width: 100%;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 120px) / 4);
+  }
 }
 
 .section {
