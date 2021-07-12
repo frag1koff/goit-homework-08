@@ -12,33 +12,59 @@
 
   margin: 0 auto;
   text-align: center;
-  background-size: 480px 400px;
+  // background-size: 480px 400px;
 
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  //     url('../images/img/hero-bg/hero-bg-mobile@2x.jpg');
+  // }
+}
+@media (max-width: 479px) {
+  .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/img/hero-bg/hero-bg-mobile@2x.jpg');
+      url('../images/img/hero-bg/hero-bg-mobile.jpg');
   }
 }
-
-@media (min-width: 768px) {
-  .hero-menu {
+@media (min-width: 480px) {
+  .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/img/hero-bg/hero-bg-tablet.jpg');
   }
 }
-@media (min-resolution: 2dppx) {
-  .hero-menu {
+@media (min-device-pixel-ratio: 2) and (min-width: 480px),
+  (min-resolution: 192dpi) and (min-width: 480px),
+  (min-resolution: 2dppx) and (min-width: 480px) {
+  .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(')../images/img/hero-bg/hero-bg-tablet@2x.jpg');
   }
 }
-
-@media (min-width: 1200px) {
-  .hero-menu {
+@media (min-width: 768px) {
+  .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/hero/hero-img.jpg');
   }
 }
+
+// @media (min-width: 768px) {
+//   .hero {
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//       url('../images/img/hero-bg/hero-bg-tablet.jpg');
+//   }
+// }
+// @media (min-resolution: 2dppx) {
+//   .hero {
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//       url(')../images/img/hero-bg/hero-bg-tablet@2x.jpg');
+//   }
+// }
+
+// @media (min-width: 1200px) {
+//   .hero {
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//       url('../images/hero/hero-img.jpg');
+//   }
+// }
 
 .label__box {
   background: rgba(47, 48, 58, 0.8);

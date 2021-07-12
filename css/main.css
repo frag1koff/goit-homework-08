@@ -258,14 +258,27 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 44px;
+  }
+}
+
 .about-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .about-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .our-team-title {
@@ -278,7 +291,6 @@ body {
 }
 
 .our-team-title-item {
-  display: flex;
   text-align: center;
 }
 
@@ -382,6 +394,7 @@ body {
 
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .link-clients {
@@ -502,6 +515,7 @@ body {
 
 .img-item:not(:last-child) {
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1047,29 +1061,28 @@ body {
   background-size: cover;
   margin: 0 auto;
   text-align: center;
-  background-size: 480px 400px;
 }
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (max-width: 479px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img/hero-bg/hero-bg-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img/hero-bg/hero-bg-mobile.jpg");
   }
 }
 
-@media (min-width: 768px) {
-  .hero-menu {
+@media (min-width: 480px) {
+  .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img/hero-bg/hero-bg-tablet.jpg");
   }
 }
 
-@media (min-resolution: 2dppx) {
-  .hero-menu {
+@media (min-device-pixel-ratio: 2) and (min-width: 480px), (min-resolution: 192dpi) and (min-width: 480px), (min-resolution: 2dppx) and (min-width: 480px) {
+  .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(")../images/img/hero-bg/hero-bg-tablet@2x.jpg");
   }
 }
 
-@media (min-width: 1200px) {
-  .hero-menu {
+@media (min-width: 768px) {
+  .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-img.jpg");
   }
 }
@@ -1244,6 +1257,8 @@ body {
 
 .footer-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-right-form {

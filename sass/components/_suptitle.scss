@@ -39,15 +39,24 @@
     width: 100%;
   }
 }
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 44px;
+  }
+}
 
 .about-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 .our-team-title {
   font-weight: 500;
@@ -58,7 +67,7 @@
   margin-bottom: 10px;
 }
 .our-team-title-item {
-  display: flex;
+  // display: flex;
   text-align: center;
 }
 .our-team-title-item {
