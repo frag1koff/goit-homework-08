@@ -103,5 +103,8 @@
   margin-top: 30px;
 }
 .modal-footer-form {
-  display: flex;
+  // display: flex;
+  @media screen and (min-width: 480px) {
+    display: flex;
+  }
 }

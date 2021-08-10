@@ -772,8 +772,10 @@ body {
   margin-top: 30px;
 }
 
-.modal-footer-form {
-  display: flex;
+@media screen and (min-width: 480px) {
+  .modal-footer-form {
+    display: flex;
+  }
 }
 
 .asdasdasd {
@@ -987,7 +989,7 @@ body {
 }
 
 .mobile-nav {
-  position: absolute;
+  position: fixed;
   background-color: #fff;
   top: 0;
   left: 0;
@@ -1057,7 +1059,7 @@ body {
 .hero {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img/hero-bg/hero-bg-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: center;
   background-size: cover;
   margin: 0 auto;
   text-align: center;
@@ -1249,20 +1251,32 @@ body {
 
 .footer-right {
   align-items: center;
-  margin-top: 12px;
 }
 
 .footer-list {
   display: flex;
 }
 
+@media screen and (min-width: 480px) {
+  .footer-list {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
 .footer-container {
   display: flex;
 }
 
+@media screen and (min-width: 480px) {
+  .footer-container {
+    text-align: center;
+  }
+}
+
 .footer-right-form {
   margin-left: 93px;
-  margin-top: 12px;
+  margin-top: 60px;
 }
 
 .footer-form-input {

@@ -23,19 +23,26 @@
 
 .footer-right {
   align-items: center;
-  margin-top: 12px;
 }
 
 .footer-list {
   display: flex;
+  @media screen and (min-width: 480px) {
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 .footer-container {
   display: flex;
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
 }
+
 .footer-right-form {
   margin-left: 93px;
-  margin-top: 12px;
+  margin-top: 60px;
 }
 
 .footer-form-input {
