@@ -12,7 +12,10 @@
   line-height: 1.55;
   color: #ffffff;
   background: rgba(33, 150, 243, 0.9);
-  overflow: auto;
+  // overflow: auto;
   transform: translateY(100%);
   transition: transform 250ms linear;
+  .portfolio-list-item:hover & {
+    transform: translateY(0%);
+  }
 }
